@@ -71,6 +71,7 @@ code --install-extension 2gua.rainbow-brackets --force
 code --install-extension jevakallio.vscode-hacker-typer --force
 code --install-extension jpoissonnier.vscode-styled-components --force
 code --install-extension angelo-breuer.clock --force
+code --install-extension xabikos.javascriptsnippets --force
 
 # Setting git
 git config --global user.name "01ch01"
