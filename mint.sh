@@ -1,4 +1,4 @@
-﻿# by https://github.com/01ch01
+# by https://github.com/01ch01
 
 cd $HOME && rm -r Documents Music Public Templates
 
@@ -12,7 +12,7 @@ sudo install -o root -g root -m 644 packages.microsoft.gpg /usr/share/keyrings/
 sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
 
 # Install and purge apt packages
-sudo apt update && sudo apt install -y balena-etcher-electron terminator git gparted vim g++ gdb python3-pip openjdk-8-jdk* dropbox htop neofetch atril flatpak spotify-client fonts-firacode vlc apt-transport-https code gimp telegram-desktop
+sudo apt update && sudo apt install -y terminator git gparted vim g++ gdb python3-pip dropbox htop neofetch atril flatpak spotify-client fonts-firacode vlc apt-transport-https code gimp telegram-desktop
 sudo apt purge -y xplayer system-config-printer tomboy simple-scan hexchat thunderbird xreader rhythmbox celluloid
 
 # Encryptr (password manager)
@@ -27,8 +27,9 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 sudo apt install -y -f && sudo apt autoremove && sudo apt autoclean && sudo apt clean 
 
 # Setting vscode keybindings and settings
-wget "https://raw.githubusercontent.com/01ch01/EditConfig/master/vscode/keybindings.json" && mv keybindings.json ${HOME}/.config/Code/User/
-wget "https://raw.githubusercontent.com/01ch01/EditConfig/master/vscode/settings.json" && mv settings.json ${HOME}/.config/Code/User/
+mkdir -p ${HOME}/.config/Code/User/ && cd ${HOME}/.config/Code/User/
+wget "https://raw.githubusercontent.com/01ch01/EditConfig/master/vscode/keybindings.json"
+wget "https://raw.githubusercontent.com/01ch01/EditConfig/master/vscode/settings.json"
 
 # Setting vscode extensions (for vscode insiders version shift from 'code' to 'code-insiders')
 code --install-extension ms-vscode.cpptools --force
