@@ -7,8 +7,8 @@ mkdir Downloads/softwares && cd Downloads/softwares
 sudo apt update && sudo apt upgrade -y
 
 # Add Etcher (create bootable flashdrives) repo
-echo "deb https://deb.etcher.io stable etcher" | sudo tee /etc/apt/sources.list.d/balena-etcher.list
-sudo apt-key adv --keyserver hkps://keyserver.ubuntu.com:443 --recv-keys 379CE192D401AB61
+# echo "deb https://deb.etcher.io stable etcher" | sudo tee /etc/apt/sources.list.d/balena-etcher.list
+# sudo apt-key adv --keyserver hkps://keyserver.ubuntu.com:443 --recv-keys 379CE192D401AB61
 
 # Import GPG keys into APT repo
 sudo -E apt-key adv --keyserver hkp://pgp.mit.edu:80 --recv-keys 5044912E
