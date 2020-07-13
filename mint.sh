@@ -26,6 +26,14 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 # Fix stuff
 sudo apt install -y -f && sudo apt autoremove && sudo apt autoclean && sudo apt clean 
 
+# Set Terminator config
+mkdir -p ${HOME}/.config/terminator/config
+wget "https://raw.githubusercontent.com/01ch01/EditConfig/master/config"
+
+# Set VIM config
+cd $HOME
+wget "https://raw.githubusercontent.com/01ch01/EditConfig/master/.vimrc"
+
 # Setting vscode keybindings and settings
 mkdir -p ${HOME}/.config/Code/User/ && cd ${HOME}/.config/Code/User/
 wget "https://raw.githubusercontent.com/01ch01/EditConfig/master/vscode/keybindings.json"
