@@ -27,7 +27,7 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 sudo apt install -y -f && sudo apt autoremove && sudo apt autoclean && sudo apt clean 
 
 # Set Terminator config
-mkdir -p ${HOME}/.config/terminator/config
+mkdir -p ${HOME}/.config/terminator && cd ${HOME}/.config/terminator
 wget "https://raw.githubusercontent.com/01ch01/EditConfig/master/config"
 
 # Set VIM config
