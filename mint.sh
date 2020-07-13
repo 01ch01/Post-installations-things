@@ -15,8 +15,6 @@ sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/packages.microso
 sudo apt update && sudo apt install -y balena-etcher-electron terminator git gparted vim g++ gdb python3-pip openjdk-8-jdk* dropbox htop neofetch atril flatpak spotify-client fonts-firacode vlc apt-transport-https code gimp telegram-desktop
 sudo apt purge -y xplayer system-config-printer tomboy simple-scan hexchat thunderbird xreader rhythmbox celluloid
 
-sudo apt install -y -f && sudo apt autoremove && sudo apt autoclean && sudo apt clean 
-
 # Encryptr (password manager)
 wget -c http://www.spideroak.com/release/Encryptr/deb_x64
 sudo dpkg -i deb_x64
@@ -24,6 +22,9 @@ sudo dpkg -i deb_x64
 # Google Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
+
+# Fix stuff
+sudo apt install -y -f && sudo apt autoremove && sudo apt autoclean && sudo apt clean 
 
 # Setting vscode keybindings and settings
 wget "https://raw.githubusercontent.com/01ch01/EditConfig/master/vscode/keybindings.json" && mv keybindings.json ${HOME}/.config/Code/User/
