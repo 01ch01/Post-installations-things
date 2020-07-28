@@ -23,6 +23,10 @@ sudo dpkg -i deb_x64
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 
+# NodeJS
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt-get install -y nodejs
+
 # Fix stuff
 sudo apt install -y -f && sudo apt autoremove && sudo apt autoclean && sudo apt clean 
 
