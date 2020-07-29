@@ -60,6 +60,7 @@ code --install-extension angelo-breuer.clock --force
 code --install-extension xabikos.javascriptsnippets --force
 code --install-extension esbenp.prettier-vscode --force
 code --install-extension visualstudioexptteam.vscodeintellicode --force
+code --install-extension artdiniz.quitcontrol-vscode --force
 
 # Setting git
 git config --global user.name "01ch01"
