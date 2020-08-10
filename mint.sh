@@ -27,6 +27,10 @@ sudo apt install ./google-chrome-stable_current_amd64.deb
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
+# Discord
+wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
+sudo dpkg -i discord.deb
+
 # Fix stuff
 sudo apt install -y -f && sudo apt autoremove && sudo apt autoclean && sudo apt clean 
 
@@ -67,3 +71,9 @@ code --install-extension tyriar.sort-lines --force
 git config --global user.name "01ch01"
 git config --global user.email "00claudio.henrique@gmail.com"
 git config --global color.ui auto
+
+# Flatpak apps
+flatpak install discord
+
+
+
