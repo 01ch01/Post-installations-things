@@ -8,7 +8,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -f -y
 
 sudo apt update && sudo apt install -y snapd synaptic terminator git htop vlc gparted vim g++ gufw python3-pip redshift-gtk gnome-disk-utility fonts-firacode telegram-desktop balena-etcher-electron mysql-server nodejs
 
-sudo snap install spotify gimp discord bitwarden && sudo snap install code --classic
+sudo snap install spotify insomnia gimp discord bitwarden && sudo snap install code --classic
 
 sudo apt purge -y parole pidgin gimp system-config-printer xfburn simple-scan gnome-mines gnome-sudoku sgt-launcher sgt-puzzles thunderbird
 
