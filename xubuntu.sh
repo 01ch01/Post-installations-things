@@ -6,7 +6,7 @@ mkdir Downloads/softwares $HOME/.themes && cd Downloads/softwares
 
 sudo apt update && sudo apt upgrade -y && sudo apt install -f -y
 
-sudo apt update && sudo apt install -y snapd synaptic terminator git htop vlc gparted vim g++ gufw python3-pip redshift-gtk gnome-disk-utility fonts-firacode telegram-desktop balena-etcher-electron mysql-server nodejs
+sudo apt update && sudo apt install -y snapd synaptic terminator git htop vlc gparted vim g++ gufw python3-pip redshift-gtk gnome-disk-utility fonts-firacode telegram-desktop balena-etcher-electron mysql-server nodejs fonts-noto-color-emoji
 
 sudo snap install spotify insomnia gimp discord bitwarden && sudo snap install code --classic
 
