@@ -8,7 +8,7 @@ sudo apt update && sudo apt upgrade -y && sudo apt install -f -y
 
 sudo apt update && sudo apt install -y snapd synaptic terminator git htop vlc gparted vim g++ gufw python3-pip redshift-gtk gnome-disk-utility fonts-firacode telegram-desktop balena-etcher-electron mysql-server nodejs fonts-noto-color-emoji
 
-sudo snap install spotify insomnia gimp discord bitwarden figma-linux && sudo snap install code --classic
+sudo snap install spotify insomnia gimp bitwarden figma-linux && sudo snap install code --classic
 
 sudo apt purge -y parole pidgin gimp system-config-printer xfburn simple-scan gnome-mines gnome-sudoku sgt-launcher sgt-puzzles thunderbird
 
@@ -38,3 +38,7 @@ gtk-update-icon-cache /usr/share/icons/Papirus-Light/
 wget -c https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 sudo dpkg -i teamviewer_amd64.deb
 sudo apt install -f -y
+
+wget -c https://discord.com/api/download?platform=linux&format=deb
+sudo dpkg -i discord*
+
